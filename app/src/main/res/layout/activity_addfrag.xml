@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".AddTask"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="#91CEE9"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/addimg"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+
+            android:background="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_action_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            />
+
+        <EditText
+            android:id="@+id/edittitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editDate"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Title"
+            android:textColorHint="#000000"
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editbody"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/edittitle"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Body"
+
+
+            android:textColorHint="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/savetask"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editbody"
+            android:layout_centerHorizontal="true"
+            android:minWidth="160dp"
+            android:text="Save Task" />
+
+        <Button
+            android:id="@+id/viewtask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Task"
+            android:layout_below="@+id/editbody"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/savetask"
+            style="@style/Widget.AppCompat.Button.Colored"
+
+
+            />
+
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addimg"
+            android:layout_centerHorizontal="true"
+            android:hint="Date" />
+
+
+    </RelativeLayout>
+</ScrollView>
